@@ -1,21 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
   <nav id="nav_id" class="border-bottom">
-    <img id="headicon" src="./assets/meteorology.png">
+    <img id="" class="headicon" src="./assets/meteorology.png">
  <p id="heading">Weather</p>
+ <p id="date_today"></p>
   </nav>
   <div class="text-center">
 
+    <div id="weather_card" class=" border border-secondary rounded">
+    <div class="">
+      <p id="location" class=""></p>
+    </div>
+
+    <div id="main_t" class="d-flex text-black">
+        <p id="temp"  class="">10</p>
+        <p id="temp_d" class="text-secondary"> &#x2103;</p>
+        <p id="w_status">Wheather type</p>
+    </div>
+
+      <img class="headicon" id="imgaicon" src="">
+        <p id="speed" class="">120 km/hr</p>
+
+    </div>
 
 
 
 
-<div id="wheather_card">
-  <p id="pri"></p>
-  <img id="imgicon" src="">
-    <p>Temperature  </p>
-    <p id="temp"></p>
-    <p> &#x2103;</p>
-<button class="loca_button" (click)="getvalues()">Find</button>
-</div>
-</div>
+
+ </div>
+<button class="loca_button d-block" (click)="getvalues()">Refresh</button>

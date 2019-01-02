@@ -8,7 +8,9 @@ import * as $ from 'jquery';
 
 export class AppComponent {
   title = 'Whether';
-
+ngAfterViewInit(){
+  this.getvalues();
+}
    getvalues = ()=>{
     navigator.geolocation.getCurrentPosition(this.printvalue);
   }

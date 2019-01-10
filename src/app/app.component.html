@@ -1,31 +1,77 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-  <nav id="nav_id" class="border-bottom">
-    <img id="" class="headicon" src="./assets/meteorology.png">
- <p id="heading">Weather</p>
- <p id="date_today"></p>
+  <nav id="nav_id" class="border-bottom" style="">
+    <div id="ico">
+    <img id="icon_me" class="headicon m1" src="./assets/meteorology.png">
+  </div>
+ <p id="heading" class="m1">Weather</p>
+ <p id="date_today" class="m1"></p>
   </nav>
-  <div class="text-center">
 
-    <div id="weather_card" class=" border border-secondary rounded">
-    <div class="">
-      <p id="location" class=""></p>
+  <section id="today_w" style="background-image: linear-gradient(to right ,#3F8CC7 20%, #C74374 40%);">
+
+
+     <div id="weather_card" class="">
+       <div class="">
+        <p id="location" class=""></p>
+       </div>
+
+       <div id="main_t" class="d-flex text-black">
+
+         <p id="temp"  class="">10</p>
+
+         <p id="temp_d" class=""> &#x2103;</p>
+         <p id="w_status">Wheather type</p>
+       </div>
+<div id="we_icon">
+       <img class="headicon" id="imgaicon" src="">
+</div>
+       <p id="speed" class="">120 km/hr</p>
+<button class="loca_button d-block mb-3" (click)="getvalues()" style="position:relative;"><i class="fas fa-redo-alt"></i></button>
     </div>
+    <img src="../assets/night2.jpeg" id="day_night">
 
-    <div id="main_t" class="d-flex text-black">
-        <p id="temp"  class="">10</p>
-        <p id="temp_d" class="text-secondary"> &#x2103;</p>
-        <p id="w_status">Wheather type</p>
+</section>
+
+<section id="find_weather">
+<div id="sc_do">
+  <div id="ima_sc">
+ <img src="../assets/detective.png" id="scroll_find">
+</div>
+ <p id="scroll_text"> Finding any location weather using city name and country</p>
+</div>
+</section>
+
+<section id="place">
+  <div id="head_form">
+     <div id="place_form">
+
+       <input type="text" placeholder="City name" id="city_name" >
+       <input type="text" placeholder="Country name" id="country_name">
+       <input type="button" id="click_me" value="Find" (click)="callby_user()">
+
+     </div>
+     <div id="result">
+      <div class="border-bottom mt-2 mb-2">
+       <p class="result_under" class="inline_me">Temperature(in &#x2103;):</p>
+      <p  id="t_text" class="inline_me"></p>
     </div>
+    <div class="border-bottom mt-2 mb-2">
+       <p class="result_under" class="inline_me">Weather status:</p>
+           <p id="we_text" class="inline_me"></p>
+</div>
+<div class="border-bottom mt-2 mb-2">
+       <p class="result_under inline_me">Wind speed:</p>
+           <p id="wi_text" class="inline_me"></p>
+</div>
 
-      <img class="headicon" id="imgaicon" src="">
-        <p id="speed" class="">120 km/hr</p>
-
-    </div>
-
-
-
-
-
- </div>
-<button class="loca_button d-block" (click)="getvalues()">Refresh</button>
+<div class="border-bottom mt-2 mb-2">
+       <p class="result_under" class="inline_me">Air pressure:</p>
+           <p id="ai_text" class="inline_me"></p>
+</div>
+     </div>
+     <div id="not_found">
+       <img src="../assets/not_found.png" id="p_1">
+     </div>
+  </div>
+</section>

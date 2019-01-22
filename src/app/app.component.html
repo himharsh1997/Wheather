@@ -7,16 +7,16 @@
  <p id="heading" class="m1">Weather</p>
  <p id="date_today" class="m1"></p>
   </nav>
+<div id="outer_today">
+  <section id="today_w" >
 
-  <section id="today_w" style="background-image: linear-gradient(to right ,#3F8CC7 20%, #C74374 40%);">
 
-
-     <div id="weather_card" class="">
+     <div id="weather_card" class="" style="background-image: linear-gradient(to right ,#3F8CC7 20%, #C74374 40%);">
        <div class="">
         <p id="location" class=""></p>
        </div>
 
-       <div id="main_t" class="d-flex text-black">
+       <div id="main_t" class="text-black">
 
          <p id="temp"  class="">10</p>
 
@@ -29,10 +29,10 @@
        <p id="speed" class="">120 km/hr</p>
 <button class="loca_button d-block mb-3" (click)="getvalues()" style="position:relative;"><i class="fas fa-redo-alt"></i></button>
     </div>
-    <img src="../assets/night2.jpeg" id="day_night">
+    <img  id="day_night">
 
 </section>
-
+<div>
 <section id="find_weather">
 <div id="sc_do">
   <div id="ima_sc">
